@@ -1,0 +1,529 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Zhenyu's Blog | Zhenyu's Blog</title><meta name="keywords" content="游戏设计，游戏策划，以及游戏开发总结"><meta name="author" content="Zhenyu Zhou"><meta name="copyright" content="Zhenyu Zhou"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="横向分析开发世界游戏原神开发世界的宝箱设计：宝箱吸引玩家的原因 对未知内容的好奇心。  对未知内容产生好奇是人的本能，这种天性会让我们对一些不知道不确定的东西产生好奇心，并且伴随着对宝箱内容的憧憬，驱使人想要开启宝箱。  对奖励的渴望  宝箱里面的内容一般都是玩家所需要的，或者是稀缺的东西，有些宝箱的奖励甚至丰厚到能大大提升玩家游戏过程的体验，比如原神新手阶段的一些宝箱对新手玩家帮助很大，还有就是">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Zhenyu&#39;s Blog">
+<meta property="og:url" content="https://sandwichzzy.github.io/2022/10/23/%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1/%E6%A8%AA%E5%90%91%E5%88%86%E6%9E%90%E5%BC%80%E5%8F%91%E4%B8%96%E7%95%8C%E6%B8%B8%E6%88%8F/index.html">
+<meta property="og:site_name" content="Zhenyu&#39;s Blog">
+<meta property="og:description" content="横向分析开发世界游戏原神开发世界的宝箱设计：宝箱吸引玩家的原因 对未知内容的好奇心。  对未知内容产生好奇是人的本能，这种天性会让我们对一些不知道不确定的东西产生好奇心，并且伴随着对宝箱内容的憧憬，驱使人想要开启宝箱。  对奖励的渴望  宝箱里面的内容一般都是玩家所需要的，或者是稀缺的东西，有些宝箱的奖励甚至丰厚到能大大提升玩家游戏过程的体验，比如原神新手阶段的一些宝箱对新手玩家帮助很大，还有就是">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://fastly.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg2.png">
+<meta property="article:published_time" content="2022-10-22T20:24:24.386Z">
+<meta property="article:modified_time" content="2022-10-31T18:42:47.119Z">
+<meta property="article:author" content="Zhenyu Zhou">
+<meta property="article:tag" content="游戏设计，游戏策划，以及游戏开发总结">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://fastly.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg2.png"><link rel="shortcut icon" href="/img/logo.png"><link rel="canonical" href="https://sandwichzzy.github.io/2022/10/23/%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1/%E6%A8%AA%E5%90%91%E5%88%86%E6%9E%90%E5%BC%80%E5%8F%91%E4%B8%96%E7%95%8C%E6%B8%B8%E6%88%8F/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"该文章创建于","messageNext":"天前，请以最新文章为准."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: Zhenyu Zhou","link":"链接: ","source":"来源: Zhenyu's Blog","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isAnchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Zhenyu\'s Blog',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: true,
+  isToc: true,
+  postUpdate: '2022-11-01 02:42:47'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="./css/style.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://cdn.jsdelivr.net/gh/Sandwichzzy/picgo/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">14</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">10</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 链接</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://fastly.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg2.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Zhenyu's Blog</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 链接</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">无题</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-10-22T20:24:24.386Z" title="发表于 2022-10-23 04:24:24">2022-10-23</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-10-31T18:42:47.119Z" title="更新于 2022-11-01 02:42:47">2022-11-01</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">12.6k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>36分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="横向分析开发世界游戏"><a href="#横向分析开发世界游戏" class="headerlink" title="横向分析开发世界游戏"></a>横向分析开发世界游戏</h1><h2 id="原神"><a href="#原神" class="headerlink" title="原神"></a>原神</h2><h3 id="开发世界的宝箱设计："><a href="#开发世界的宝箱设计：" class="headerlink" title="开发世界的宝箱设计："></a>开发世界的宝箱设计：</h3><h4 id="宝箱吸引玩家的原因"><a href="#宝箱吸引玩家的原因" class="headerlink" title="宝箱吸引玩家的原因"></a>宝箱吸引玩家的原因</h4><ol>
+<li>对未知内容的好奇心。</li>
+</ol>
+<p>对未知内容产生好奇是人的本能，这种天性会让我们对一些不知道不确定的东西产生好奇心，并且伴随着对宝箱内容的憧憬，驱使人想要开启宝箱。</p>
+<ol start="2">
+<li>对奖励的渴望</li>
+</ol>
+<p>宝箱里面的内容一般都是玩家所需要的，或者是稀缺的东西，有些宝箱的奖励甚至丰厚到能大大提升玩家游戏过程的体验，比如原神新手阶段的一些宝箱对新手玩家帮助很大，还有就是塞尔达里面一些高属性武器，这些奖励可能会提升玩家的能力或者给玩家所需的珍惜材料，对这些材料的渴望驱动着玩家去找寻宝箱、</p>
+<ol start="3">
+<li>挑战或收获的成就感和满足感</li>
+</ol>
+<p>绝大部分宝箱都不会直接送到玩家的面前，通常都是需要玩家进行收集或完成一些挑战，特别是在开放世界游戏的大地图里会有大量的宝箱，有的人就热衷于将大量的宝箱找出来，如果最后他们全收集了，将”地图扒空“会让他们产生成就感，满足感。</p>
+<h4 id="宝箱设计的目的"><a href="#宝箱设计的目的" class="headerlink" title="宝箱设计的目的"></a>宝箱设计的目的</h4><ol>
+<li>奖励</li>
+</ol>
+<ul>
+<li>流程玩家：这个可以说是奖励也可以说是在引导玩家进行游戏。</li>
+<li>战斗性玩家：将怪物和BOSS后给予的奖励。</li>
+<li>解密性玩家：完成解密后给予的奖励。</li>
+<li>探索性玩家：或者叫好运气的玩家，对于一些喜欢探索未知区域或者往高攀登的玩家，给予他们一些幸运奖励。</li>
+<li>新手玩家：通常可以放置在玩家出生点附近，里面奖励的内容对于新手玩家来说是比较有吸引力的，可以放在新手玩家的必经之路，也可以放在反方向，让一些充满好奇心的新手玩家获得一些小小的帮助，《原神》在游戏出生点附近就放置了一个对新手来说很豪华的宝箱。</li>
+<li>综合型玩家：玩家大都不是单一的类型，我们可以结合来进行考虑奖励。</li>
+</ul>
+<ol start="2">
+<li>引导和提示</li>
+</ol>
+<ul>
+<li>引导玩家体验游戏的流程，玩家在游戏的过程中不喜欢绕路，喜欢直来直往，在主路线相应的位置放置宝箱能改善这个问题，让玩家在走在设计好的路线的情况下不至于偏移得太厉害，但这也仅仅只是改善，无法解决这个问题，因为我们只能引导玩家，无法强行控制玩家前进路线，通常利用宝箱来进行路线的引导对于新手玩家在游戏体验初期能起到非常好的作用，</li>
+<li>让玩家看到被锁住的宝箱，暗示玩家附近可能有事件或者有怪即将出现。</li>
+<li>有些解密的关键触发点可能会比较深，玩家不能直接看到，而在这个时候设置一些引导宝箱，玩家的目标会从想要解密到想要获得这个宝箱，当他们开启宝箱后拐个弯就发现解密的关键要点也可以带来惊喜。</li>
+</ul>
+<ol start="3">
+<li>资源投放</li>
+</ol>
+<p>宝箱可以作为资源投放的一个方式，玩家不仅可以获得资源，还能附带体验到寻宝的感觉。</p>
+<ol start="4">
+<li>调整探索和游戏节奏</li>
+</ol>
+<p>关卡或大地图的设计由各功能模块或区域组成，控制宝箱在某个区域或模块的数量和摆放频率，引导玩家在该区域停留，以此达到调整探索和游戏节奏的目的。调整宝箱放置的频度和密度一般来讲是和玩家停留在某个场景的时间是成正比的，摆放频率越高，玩家平均逗留在这个区域平均时间就越高。</p>
+<p>原神中宝箱的分级：</p>
+<ul>
+<li>最高，价值最高，数量最少，通常在击败强力BOSS或者比较难的解密时出现。</li>
+<li>中等，价值中等，数量中等，没什么好讲究的。</li>
+<li>普通，价值最低，数量最多，只要不是特别离谱的数量，基本是可以随便放的，因为也没什么值钱的东西。</li>
+</ul>
+<h4 id="宝箱的设计思路"><a href="#宝箱的设计思路" class="headerlink" title="宝箱的设计思路"></a>宝箱的设计思路</h4><p>首先确定目的，再决定宝箱总价值，然后确定高价值道具的类型，再确定价值高的数量，然后添加低价值道具的数量，最后再看看用什么等级的宝箱装比较合适，通过调整数量来达到平衡。</p>
+<h4 id="摆放位置"><a href="#摆放位置" class="headerlink" title="摆放位置"></a>摆放位置</h4><p>a)直接接触空间</p>
+<p>这种宝箱的特点就是可以直接被玩家看到和玩家理论上是可以直接走到宝箱的旁边，一般是玩家看到宝箱之后就知道自己应该怎么做才能获得和打开这个宝箱，比如玩家在大地图闲逛的时候看到一个被怪物镇守着的宝箱，知道击败怪物就能获得宝箱。</p>
+<p>b）间接接触空间</p>
+<p>简单来说就是，你能看到宝箱，但是你没办法直接接触到宝箱，这种宝箱的特点就是一般玩家也不知道接下来要怎么才能获得宝箱，需要在附近找解密或者找正确的方式进去才能获得宝箱，有些宝箱甚至需要玩家二周目才能拿到，这种宝箱容易给玩家留下深刻的印象，或者被忘记。</p>
+<p> c）半不可接触空间</p>
+<p>我管这种摆放方式也称作“惊喜宝箱”，是给玩家制造惊喜的好方法，比如原神里面一些石头后面可能藏有宝箱，这样的摆放方式特点就是会有比较强的提示，比如和周围环境不太一样的石头，提示玩家可以敲开，玩家猜测那里面可能有宝箱，但你却无法肯定那里就一定有宝箱，最后走进一看如你所愿，真的有宝箱。</p>
+<p>d）不可接触空间</p>
+<p>这种宝箱通常就是通关副本时，或者解开一个谜底时突然出现，给玩家一种很惊喜的感觉，我们可以在一些比较困难的挑战之后突然出现一个宝箱给玩家惊喜。</p>
+<h3 id="开放世界的任务设计-x2F-任务指引"><a href="#开放世界的任务设计-x2F-任务指引" class="headerlink" title="开放世界的任务设计&#x2F;任务指引:"></a>开放世界的任务设计&#x2F;任务指引:</h3><p>《原神》的任务辅助系统可谓是相当完善，主要包括任务指引、任务说明、任务的开始与结束的提示这些方面。</p>
+<ol>
+<li>任务指引：</li>
+</ol>
+<ul>
+<li>当存在任务点时，《原神》的大地图、小地图以及人物视野都会显示任务标识，方便玩家确认任务的大致方位；</li>
+<li>某些任务会有一个范围区域，这在大地图和小地图上会有一个黄色光圈提示，防止玩家在任务范围外做无意义的搜寻；当玩家从远处到达任务点附近时，若附近有太多障碍物挡住任务点，任务点上方还会有一道黄色光柱用于指引玩家；</li>
+<li>玩家也可以使用追踪功能，此时玩家视野的左侧UI会提示玩家与任务点之间的距离，除此之外，还会提示任务点是在高处还是在低处，方便玩家在地形复杂的区域精确定位任务点；</li>
+<li>当任务点处是一位NPC时，使用追踪功能在地上还会有一条发光的线，玩家可沿着它追寻任务点。</li>
+</ul>
+<ol start="2">
+<li>任务说明：</li>
+</ol>
+<ul>
+<li>第一处是任务界面，玩家打开任务界面后可从界面中获取到任务信息：任务名、任务地点、任务条件、任务描述、任务奖励；</li>
+<li>第二处是大地图点击任务标识，也会显示同第一处一样的任务信息；</li>
+<li>第三处是玩家视野左侧UI，会显示简化的任务信息，包括任务名、任务完成条件、任务点距离，能够指引玩家清晰地完成任务。</li>
+</ul>
+<ol start="3">
+<li>任务的开始与结束的提示</li>
+</ol>
+<ul>
+<li>当满足任务的触发条件时，玩家视野中央会弹出任务名称，UI左侧也会显示任务名称、任务完成条件、点击追踪的提示，用于让玩家感知到任务的开始；</li>
+<li>当任务完成后，UI左侧会提示任务完成，玩家视野中央也会弹出任务完成提示以及任务完成后的奖励图标，用于给玩家直观的获得反馈。</li>
+</ul>
+<h3 id="原神利用元素反应进行的机关设计："><a href="#原神利用元素反应进行的机关设计：" class="headerlink" title="原神利用元素反应进行的机关设计："></a>原神利用元素反应进行的机关设计：</h3><p><img src="https://cdn.jsdelivr.net/gh/Sandwichzzy/picgo/img/%E5%9B%BE%E7%89%871.png" alt="元素反应"></p>
+<p>举例说明：须弥和稻妻地图中的机关设计</p>
+<h4 id="利用元素与物件交互："><a href="#利用元素与物件交互：" class="headerlink" title="利用元素与物件交互："></a>利用元素与物件交互：</h4><ul>
+<li>弹弹菇：玩家踩上去可以弹起来，雷元素攻击可以激活它的活性，可以跳的更高，用火属性攻击会枯萎，拿到草种子可以重新激活它的生机。</li>
+<li>众叶觉蕊（胖胖的花）：使用草元素攻击，激活四叶印（可以让玩家在空中进行一段一段位移，可以让玩家按照设计方向移动）</li>
+<li>死域：利用草种子给玩家增加草属性附着，然后攻击周围所有的死去的树苗，可以触发机关。</li>
+<li>石柱封印：利用火元素的攻击对草元素的石柱反应，解锁被封印的敌人道具。</li>
+<li>元素方碑：使用对应元素按照一定顺序攻击方碑，激活机关。</li>
+<li>屏障：利用对应的元素种子附着，可以穿过元素屏障。</li>
+</ul>
+<h4 id="利用机关帮助大世界探索："><a href="#利用机关帮助大世界探索：" class="headerlink" title="利用机关帮助大世界探索："></a>利用机关帮助大世界探索：</h4><ul>
+<li>体力花：在攀爬的时候有时候会遇到长在山边的花，触碰恢复一定的体力。</li>
+<li>（种子镜）像树一样的高塔：也是使用草种子来激活入口，顺着梯子爬上去，使用种子镜来寻找未成形的死域。 （类似于塞尔达在高塔高处利用望远镜标记神庙和传送点）。</li>
+</ul>
+<h4 id="改变机关的物理位置（旋转角度，移动，抛物线，连线等）解密："><a href="#改变机关的物理位置（旋转角度，移动，抛物线，连线等）解密：" class="headerlink" title="改变机关的物理位置（旋转角度，移动，抛物线，连线等）解密："></a>改变机关的物理位置（旋转角度，移动，抛物线，连线等）解密：</h4><ul>
+<li>转动固定立方体：使他们相同图案转动到同一侧，解锁谜题。</li>
+<li>雷能量传输：类似于连接电路。首先要找到传输装置和接收装置，可以用来连接的装置一共有三种：继电石，雷精灵以及带有雷元素标记的角色自己，每个传输装置有一定的距离，需要玩家调整这些道具的位置，连线成功后解锁。</li>
+</ul>
+<h4 id="利用数学逻辑解密"><a href="#利用数学逻辑解密" class="headerlink" title="利用数学逻辑解密"></a>利用数学逻辑解密</h4><ul>
+<li>类似于激活一个机关，会同时影响到邻近的机关。类似于7个灯泡围成一圈，灯泡会有亮和不亮两个状态，改变一个灯泡的状态的同时，它相邻两个灯泡会改变状态，让你如何把7个灯泡由全暗到都点亮。（难度太高会影响轻度玩家参与度）。</li>
+</ul>
+<h3 id="怪物设计"><a href="#怪物设计" class="headerlink" title="怪物设计"></a>怪物设计</h3><p>《原神》有着普通、精英、BOSS三种等级的怪物。</p>
+<h4 id="普通怪"><a href="#普通怪" class="headerlink" title="普通怪"></a>普通怪</h4><p>普通怪物韧性低，被攻击后有明显的硬直，受击反馈强，而且攻击手段易于被预判和闪避，防御手段较弱，玩家战斗体验偏向于无双割草的爽快感。不过有部分普通怪的设计有悖于以上提到的特点，导致玩家战斗体验低下，比如稻妻版本新增的怪物海乱鬼，韧性过高，玩家打了半天无法将其移动分毫，再加上如果他的同伴（另一个海乱鬼）被杀死，还会将血量回满，并且免疫控制，其攻击手段虽然起手姿势明显，但是出刀快，范围大，伤害高，玩家经常会一刀就被秒掉，总体战斗难度高体验差，而且其击杀后物品的掉率低，品质差，建议要么改变其设计定位，将其划入精英怪的行列，并增加物品掉率，要么通过削弱其韧性，增加一些弱点，减慢出刀速度等手段来降低其战斗难度。</p>
+<h4 id="精英怪"><a href="#精英怪" class="headerlink" title="精英怪"></a>精英怪</h4><p>精英怪物韧性高，受击反馈弱，攻击手段范围大但易于闪避，血量高于普通怪但有明显弱点，相比普通怪的战斗会稍显吃力，但在击杀后玩家会有明显的成就感。比如《原神》当中的遗迹守卫，块头大，韧性极高，能够给玩家视觉上的压迫感，其攻击手段包括发射一连串的导弹（发弹前有双手后放头朝天的起手动作，且导弹飞行速度慢，弹道易预判和闪避），大风车（转动起来范围大，威力大，但移动速度慢，玩家远离怪物则没事），泰山压顶（起跳时有蓄力动作，落地处有红圈提示）；遗迹守卫的头部还有一处弱点，用弓箭攻击后，遗迹守卫会暂时处于瘫痪状态，相当于对玩家的奖励。在经过一系列紧张的闪避、还击后，这个大块头在玩家面前轰然倒下，成就感也就油然而生。</p>
+<h4 id="Boss怪"><a href="#Boss怪" class="headerlink" title="Boss怪"></a>Boss怪</h4><p>BOSS怪物体型大，免疫控制，基本无受击反馈，除此之外《原神》的BOSS设计各有特点，能够给玩家带来丰富的战斗体验，如无相元素怪（无相之火、水、雷、冰、风、岩），能免疫特定的元素伤害，由于自身元素永久附着，因此很容易触发元素反应，这就能加深玩家对于元素反应系统的理解，并采取合适的应对策略，如改变阵容搭配，圣遗物武器选择等，无相元素怪攻击阶段和硬直阶段有着明确的划分，这使得玩家的战斗体验更偏向于回合制战斗。</p>
+<h4 id="周常BOSS"><a href="#周常BOSS" class="headerlink" title="周常BOSS"></a>周常BOSS</h4><p>再如公子、女士、若陀龙王，这些BOSS的特点就是随着战斗过程的推进，BOSS会进入更强的阶段并有更强力的攻击手段，这使得玩家的战斗节奏会越来越紧张，并在击败BOSS的那一刻完全放松下来，从而获得巨大的成就感和爽快感。</p>
+<h2 id="艾尔登法环"><a href="#艾尔登法环" class="headerlink" title="艾尔登法环"></a>艾尔登法环</h2><h3 id="开发世界特点"><a href="#开发世界特点" class="headerlink" title="开发世界特点"></a>开发世界特点</h3><p>开发世界游戏最大的挑战就是如何设计难度平衡。如何能让玩家可以在满地图跑的同时，体验平稳增长的难度曲线。比如刺客信条使用等级机制限制玩家，巫师3利用任务驱动玩家，上古卷轴是根据玩家等级动态设置敌人等级。</p>
+<p>而艾尔登法环难度平衡不是很明显，艾尔登法环基于魂系游戏的特点，没有设计公式化的开放世界，甚至没有任务列表，以及各种各样的支线剧情，强引导等。老头环开放世界的乐趣在于打破了传统的难度曲线，玩家可以自由选择探索的地方，打不过的敌人也可以先跑之后变强了再来挑战，给予玩家去思考如何让自己成长，先打什么怪，先去哪里获得什么样的技能和武器，再去挑战之前打不过的敌人，如何评估自己是否有能力挑战敌人，这些都是属于开发世界带来的自由。对于喜欢挑战，喜欢生存的玩家来说，这种在夹缝中生存的乐趣，使得这个开放世界充满了独特的魅力。</p>
+<p>另外一个特点是作为开放世界，老头环没有记录系统。与NPC的对话，获得的线索，以及NPC的位置，完全只能考玩家自己记录，需要玩家在大地图上标注。游戏的其他探索内容，比如墓穴，废墟城堡，甚至骨灰系统的解锁，游戏也没有引导内容，完全考玩家自行去探索。这和传统开发世界元素视觉化，鲜明化产生了很大的对比。</p>
+<h3 id="大地图引导设计"><a href="#大地图引导设计" class="headerlink" title="大地图引导设计"></a>大地图引导设计</h3><p>如何让人产生探索地图的欲望：艾尔登法环将血缘的地牢，黑魂的城堡，只狼的立体，过往系统的重组融合。但艾尔登法环真正解决的问题是，当过去封闭连续的玩法被切割开，散落在一个巨大的开放世界地图，如何把它们和玩家串在一起，引导玩家在开放世界里探索。</p>
+<p>解决办法：增加了地图，但地图更像一张古代的手绘地形图，只勾勒出地貌和标志性的建筑大体的方向。通过四层结构的探索的藏宝图，吸引玩家去在大地图探索。</p>
+<p>第一层：地图符号层。地图上有别与普通地形的符号，代表地图上可以探索的内容。同兴圆环代表封印监牢，破碎的框框条条代表废墟，黄色的小洞代表矿坑。玩家可以利用地图去寻找可以探索的关卡，这是玩家踏上冒险的第一驱动力。</p>
+<p>第二层：路标层：法环的路标有各种各样的类型，比如指向某处巢穴的雕像，或者换出幽灵带路的蜡烛台，这些元素不会画在地图上，也不是一眼能看见的地标，而是藏在小路，山峦间的小提示。</p>
+<p>第三层：传说层：NPC的对话，商人贩卖的信息，以及物品说明等之言片语。触发的条件比较随机，隐藏的也比较深。</p>
+<p>第四层：秘密层。也就是交界处鲜为人知的秘密，道具信息，武器信息，以及深入探索触发的剧情，这些信息只奖励给善于观察，热爱探索地图，或者运气好的玩家。</p>
+<p>这四层交织而成形成了开放世界探索的巨大藏宝网络，玩家会感觉自己像是一个真正的探险家，用地图定下方位，偶尔遇到一些路标到达一些遗迹，寻找游戏里别人口中的传说，探索不同地区鲜为人知的秘密。通过这样的循环体验，玩家的探索欲和成就感也就一点点放大，最后结合自己的顺序打败一个个敌人，不知不觉的将碎片化的故事串联起来。</p>
+<h3 id="关卡设计特点："><a href="#关卡设计特点：" class="headerlink" title="关卡设计特点："></a>关卡设计特点：</h3><p>在《艾尔登法环》中，除了开放世界的地图设计，更加出彩的，依然是延续《黑暗之魂》系列为主的箱庭关卡设计。</p>
+<p>首先将以一个地牢（小箱庭）作为入手点进行分析。</p>
+<h4 id="区域划分"><a href="#区域划分" class="headerlink" title="区域划分"></a>区域划分</h4><p>一个箱庭关卡的区域划分： </p>
+<ul>
+<li>入口（重生点、赐福点、篝火）：作为玩家进入箱庭关卡的起点，作为绝对的安全空间；同时作为一个系列挑战主题的起点，应该展示出一定的主题性。 </li>
+<li>启动区域（玩家第一个进入的区域）：一般作为该箱庭关卡中，较为轻松的区域，主 要作用是向玩家展示这个关卡的怪物&#x2F;挑战主题，明示玩家会遇到什么样的挑战，以便及时作出相应的准备。 </li>
+<li>小高潮挑战区域：一般会放置除了BOSS之外的高级怪物，或者较为密集的挑战；将这个箱庭的体验推向一个小的高潮。同时也是消耗玩家补给品的区域，为玩家的后续挑战提供充足的压力。 </li>
+<li>中转区域：这个区域主要服务于各个区域的道路快捷通道的承接，辅助以强度较低的怪物或者挑战，同时达到一个箱庭关卡中，放松玩家调节游戏节奏的作用。 </li>
+<li>BOSS区域：一般以关卡设计师预期玩家应有的挑战体验为主，针对不同BOSS的技能，配合与适当加强或者放松玩家挑战难度的地形。总体来说，BOSS区域会在战斗胜利之后，有一个回到入口的快速方式。</li>
+</ul>
+<h4 id="连接方式"><a href="#连接方式" class="headerlink" title="连接方式"></a>连接方式</h4><ul>
+<li>双向通路：作为通路的最基础类型，双向通路意味着两个区域之间可以较为畅通的双向连接，来回不会受到限制。 </li>
+<li>单向通路：意味着通过地形高低差设计，或者机关的设计，只能从一个区域通向另外一个区域，而无法逆向通向。 </li>
+<li>条件解锁通路：完成设计师预定目标后，解锁的通路，可以是单向通路，也可以是双向通路。作为经典的条件解锁通路就是背后上门栓的门，以及需要机关开启的门或者 电梯（升降梯）。条件解锁通路是达成条件之后，这条通路的状态就属于开启状态。 </li>
+<li>条件通行通路：与条件解锁通路不同，这种通路是要玩家一直保持某种状态才能进入的通路，可以是单向，也可以是双向。（目前在老头环中没有发现这种设计）</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/Sandwichzzy/picgo/img/%E5%9B%BE%E7%89%872.png" alt="区域连接图"></p>
+<ol>
+<li><p>从入口到启动区域，采用双向通路：由于启动区域的目的是向玩家传达整体箱庭的挑战类型基调，让玩家可以预知后面应当采用什么样的Build装备体系，并且分配自己的补给品。 所以此处采用双向通路，让玩家可以快捷地更具所要面临的挑战，在入口赐福点更换相应的体系。 </p>
+</li>
+<li><p>从启动区域到小高潮区域，采用单向通路：由于小高潮区域的设计目标，期望将玩家 的前期压力（受苦体验）拉升至一个小的高峰；此处采用单向通路，阻断了玩家回头补给的可能性；增大了死亡的风险的同时，让玩家对于后续未知区域的探索排除了迷失的方向的可能性。 </p>
+</li>
+<li><p>中转区域与小高潮区域，采用双向通路：设计前提是在玩家开启了单向门之后，可以在此处有一个泄压的阀门，将玩家压力水平降低到普通水平。与此同时，中转区域回到小高潮区域，玩家可以在篝火重新补给之后，再次回到小高潮区域进行犄角旮旯的二次探索。（由于中转区域的主要作用是区域之间的连通作用，所以默认从中转区域的跑路过程是更加便利的） </p>
+</li>
+<li><p>中转区域到BOSS区域，采用单向通路：目的其实很简单，首先，单向通路的设计天然带有提升压力的作用（相对于没有回头路的破釜沉舟背水一战）。 其次，单向通路可以阻断在快速挑战BOSS，从中转区域跑路的过程中，吸引的其他怪物（将其他怪物尽可能的阻断），这样BOSS的挑战将在没有其他外部干扰的过程中进行。</p>
+</li>
+</ol>
+<p>综上所述，一个小型的箱庭关卡设计，在规划好区域和道路之后，就相当于有了一个最早期的关卡设计蓝图。 而后续，则是需要根据蓝图的规划，来搭建相应的白模，对蓝图设计进行白模验证。那么到了做白模的时候，除了考虑场景设计合理性之外，还需要对关卡整体的节奏进行把控。</p>
+<h4 id="关卡节奏控制"><a href="#关卡节奏控制" class="headerlink" title="关卡节奏控制"></a>关卡节奏控制</h4><p><img src="https://cdn.jsdelivr.net/gh/Sandwichzzy/picgo/img/%E5%9B%BE%E7%89%873.png" alt="关卡节奏表"></p>
+<h5 id="地形"><a href="#地形" class="headerlink" title="地形"></a>地形</h5><p>首先来看地形，地形方面可以实战的空间，主要是基于设计时，X、Y、Z3个坐标轴进行的舒展和限制。通过控制变量，将会得到通俗意义上的开阔地、狭窄通道、低矮环境等。基于玩家的自身能力，以及怪物的设计，不同的地形会对玩家&#x2F;怪物的能力进行放大或者限制，而有些地形则会禁止玩家&#x2F;怪物作出某些行为。 </p>
+<p>但一般来说，不会通过地形来禁止怪物的行为，而是将玩家作出相应的举动后，暂时\永久性的剥夺怪物作出某些行为的能力。（因为这对于玩家来说属于一个对抗的爽点，所以设计师不会自己去剥夺这样的爽点）又或者说，关卡设计师通常情况下，只会在合适的地形上放置合适的怪物。 </p>
+<p>所以，在我们讨论地形对于关卡节奏的影响时，主要针对的是玩家侧对于地形的利用，地形对于玩家行为的限制削弱；以及放大怪物的行为，给玩家带来额外的压力。 在进行关卡节奏把控时，一般对于关卡地形进行分类，并且评估其对一场战斗难度影响，根据影响的大小进行赋值。 对双方都无明显影响的，赋值为1；限制玩家的地形赋值大于一，减少玩家难度的赋值小于1。 </p>
+<p>例如我们将一块平平无奇的开阔地设置为我们基准对照，赋值为1（例如很多游戏中出现的竞技场，由于地形大小适中，无阻拦，交战双方不会受到任何地形带来的限制或者放大，完全凭借双方的基础能力进行对抗）。而其他的地形则相应的会在基准值上进行难度的加成或者削弱。 举个例子，狭窄通道限制了玩家在场景中闪展腾挪的空间，而怪物的攻击命中可能性更大，狭窄通道的难度赋值将会大于基准数值1；而一个可以骑马提高玩家机动性的场景中，由于玩家的活动拉扯空间会更加大，加上载具带来的移动能力加成，所以大型开阔地带的赋值将会小于基准数值1。 </p>
+<h5 id="怪物强度"><a href="#怪物强度" class="headerlink" title="怪物强度"></a>怪物强度</h5><p>在关卡设计中，怪物带来的体验变化是最为明显的，所以关卡配怪直接决定了关卡的节奏的基调。 </p>
+<p>怪物在设计之初，技能设计与数值配置决定了基础的强度N，而在关卡设计时，关卡策划比较难改变目标投放怪物的基础强度N，更多控制的是怪物与怪物之间产生的联动对于强度的提升，这里用C来表示。 </p>
+<p>说道怪物组合，就不得不提一下基础且经典的战法牧体系，这套体系不仅适合与玩家的 职业设计，对于怪物组合的设计也可以提供一定的指导意义。 </p>
+<ul>
+<li>战士：主要提供坦度，保护其他类型的怪物 </li>
+<li>法师：主要提供输出，血量较少；不一定非得是法师，只是一个提供DPS的统称 </li>
+<li>牧师：主要提供回血等辅助战斗的技能，血量较少；回血只是一个统称，但凡以增加存活时长，增加战斗变数的辅助技能为主的，都可以算是牧师的范畴。</li>
+</ul>
+<p>战法牧体系的怪物配置，算是短板缩小型的铁三角搭配方法；每个定位的怪物都有自己明显的长版和短板，相互配合使得各自的短板被其他伙伴弥补。 </p>
+<p>但是传统战法牧体系在放怪物搭配中有个问题，就是玩家可以绕过T，直接去输出后方的DPS，导致三角体系崩坏。所以一般在怪物设计时，会通过其他手段来弥补这一差值。例如T带有骚扰型技能，或者瞬移技能，干扰玩家对于DPS怪物的输出。 战法牧这种属于短板弥合型的组合方法，让整个组合可以相互倚重。 </p>
+<p>除了战法牧的短板弥合配置方式，还有一种长版放大型的怪物组合思路；就是让怪物的长板变得足够长。可以是一群类似定位的怪物组成的集合（例如4个弓箭手，玩家不管优先击杀哪个，其他都会以远程攻击进行威胁）；或者是怪物与地形的合理配置（例如小高台上有远程怪物，玩家要去想高台，需要经过一个小开阔地，增加被击中的风险）。 </p>
+<p>回到怪物强度的与节奏的话题。怪物之间的组合C带来的强度补正，才是关卡中真实的怪物强度：NxC。 </p>
+<p>在最开始的表格中，怪物强度指的是单独怪物在设计初定的强度值N，多个怪物同时投放时，采取加算的方法。 C指的是这个区域中，投放的怪物之间对于强度的补正，补正之后的值，才是这个区域中怪物真正的强度。 </p>
+<h5 id="损耗系数"><a href="#损耗系数" class="headerlink" title="损耗系数"></a>损耗系数</h5><p>损耗系数，指的是一个区域内的挑战，对玩家的血量\蓝量，或者其他生存类资源损耗情况的预期。 </p>
+<p>例如一个区域在经过怪物补正和地形补正之后的怪物强度是50，在50强度的区间下，玩家的损耗系数为0.15。那么代表玩家在经过这个区域时，在设计预期上会消耗玩家 50x1.5&#x3D;7.5的血量。 损耗系数作为怪物强度实际反应到玩家资源的系数，需要关卡设计师根据自己游戏的属性设定和数值策划进行沟通核实。可以理解为，玩家需要消耗多少资源，才可以通过这个区域的挑战。（例如击杀1只强度为10怪物所用的MP大约为10，那么系数就是1） </p>
+<p>例如《艾尔登法环》中，有HP、MP两种需要喝药回复的资源。那么损耗系数就应该有HP损耗系数，以及MP损耗系数。 而损耗系数随着怪物强度的提升，一般是一个区间递进的数值。因为一个区域中的强度 越高，玩家发生失误的可能性越大，需要考虑计算上玩家的失误惩罚，对于损耗系数进行调整。 </p>
+<p>例如1-100的怪物强度区间内，MP损耗系数为1；101-200区间内，代表玩家面对的挑战升级了一个档次，可能会有技能空放，或者被打断的情况频繁出现，这个区间的MP损耗系数就需要有一个区间补正。 损耗系数一般通过数值规划可以得出，而区间的补正，则是通过多次测算得来的一个模糊值。 </p>
+<p>那么，知道一个区域的损耗对于关卡节奏有什么用呢？ </p>
+<p>在《艾尔登法环》的箱庭关卡中，我们时长有一种错觉，就是在玩家的补给品快要耗尽时，往往就会有一个赐福点，让我们有一个压力的释放和心流的起伏。这时，关卡损耗就承担着对于在一个关卡中，哪个区域给玩家放置补给点\重生点，有着特别好的参考价值。</p>
+<h3 id="战斗系统丰富-gt-策略多样化"><a href="#战斗系统丰富-gt-策略多样化" class="headerlink" title="战斗系统丰富-&gt;策略多样化"></a>战斗系统丰富-&gt;策略多样化</h3><ul>
+<li>战灰系统，质变系统，可以随时更换战技，变化属性。</li>
+<li>骑马，完虐步兵，可以放风筝。</li>
+<li>洗点：法师换战士，战士换刺客，刺客换神官。</li>
+<li>法术系统，信仰系统，双手武器。</li>
+<li>BOSS可以召唤骨灰助阵，联机。</li>
+</ul>
+<h3 id="环境叙事"><a href="#环境叙事" class="headerlink" title="环境叙事"></a>环境叙事</h3><p>碎片化叙事，游戏中很多支线，通过简单的NPC对话，以及物品信息的简单描述还有场景中的细节，来展示一段故事。</p>
+<p>这种的好处就是游戏不需要利用过多的笔墨和描述，也不需要通过动画演出来强行经过他人之口灌输给玩家，自然而然的将一些有血有肉的真实故事世界观呈现到玩家的面签，并且利用留白的手法，让玩家可以对这些剧情进行进一步的讨论，提升游戏的热度。</p>
+<p>举例：<strong>爱哭水母的追星故事</strong></p>
+<p>玩家最开始可以通过小红帽获得少女水母库拉拉的骨灰，当时小红帽的台词是：能请你带这个孩子一起旅行吗，我想这孩子也会很开心。短短一句话就能感觉出水母的天真浪漫的性格，也道出了小红帽有与灵魂沟通的能力（埋下伏笔，小红帽成为通灵师）。然后这个骨灰的描述是：爱哭的少女水母寻找着遥远的故乡。然后当玩家来到化圣雪原上，在一个遗迹里可以遇到喃喃自语的水母，呼唤着自己的姐姐。玩家可以召唤出库拉拉来，让只剩灵魂的姐妹两以灵魂水母的姿态重逢，完成一起看星星的心愿。然而，在他们重逢处的不远处，立着他们的墓碑，上面写着“无缘见到星星的姐妹 库拉拉和库拉丽丝”。结合观星者帽子的物品说明,”如今夜空里也就没有了星星”。这些碎片化的信息留下大量的空间让玩家猜想他们的结局，他们重逢了，是否可以看到星星？他们生前是否是观星师？他们的死是否又和这被封印的星空有关。</p>
+<p>举例：摩恩城</p>
+<p>当玩家接受城主女儿的请求，来到摩恩城。从电梯上去，能够看到这样一幅景象：</p>
+<h2 id="塞尔达荒野之息"><a href="#塞尔达荒野之息" class="headerlink" title="塞尔达荒野之息"></a>塞尔达荒野之息</h2><h3 id="开发世界特点："><a href="#开发世界特点：" class="headerlink" title="开发世界特点："></a>开发世界特点：</h3><h4 id="涌现式交互"><a href="#涌现式交互" class="headerlink" title="涌现式交互"></a>涌现式交互</h4><p>例子：当玩家持有金属武器时，会在雷天遭到雷击。于是玩家也可以用磁铁来抓取武器，借助雷击来攻击营地中的敌人。玩家可以用火去点燃木柴，那么也可以点燃其他木制品。</p>
+<p>对开放世界的游戏实体采用了涌现式设计：指的是游戏世界中一切内容遵循相同的规则，游戏中不同的实体和系统在既定规则约束下相互发生作用，在玩家的介入下不断产生有意义的结果以及更丰富的玩法。</p>
+<p>这种设计模式的开发世界游戏，当玩家了解了游戏的规则，并且关卡中的实体以及系统都满足这样的规则，就可以使用自己的思维去找到各种可能的游戏玩法，玩家会有更自由的体验，因为游戏不会约束玩家达成某个目标而使用不同的手段。</p>
+<h4 id="如何构建涌现式玩法"><a href="#如何构建涌现式玩法" class="headerlink" title="如何构建涌现式玩法"></a>如何构建涌现式玩法</h4><ol>
+<li><strong>选择合适的机制以及如何将数个系统恰当的联系起来。</strong></li>
+</ol>
+<p>Keith Burgun 提出过Elegant Game设计中，游戏各系统之间的rules数量要小于系统之间的connection之间的连接数。这样设计出来的游戏会更优雅，同时更高效 的利用游戏资源以及让玩家更容易的去利用系统连接，完成更多花样的玩法。</p>
+<ol start="2">
+<li><strong>系统裁剪</strong></li>
+</ol>
+<p>运用条件：需要让游戏中的系统经过细致的裁剪，去除掉不必要的系统间的链接，留下足够有趣的部分。因为如果没有限制的建立系统中的连接，可能会让整个关卡坍塌，这也是为什么塞尔达里没有办法凭空生成一个冰方块，然后冰方块的数量限制在三个以内。</p>
+<ol start="3">
+<li><strong>易于理解</strong></li>
+</ol>
+<p>除了系统裁剪，还有同时通过画面或者UI保证游戏的信息足够明确，系统复杂程度不会影响信息的传达。整体游玩过程的节奏需要恰到好处，更多的是让实体或者系统发挥复数的作用。</p>
+<h4 id="为什么使用涌现式设计"><a href="#为什么使用涌现式设计" class="headerlink" title="为什么使用涌现式设计"></a>为什么使用涌现式设计</h4><p><strong>给予玩家极高的自由度</strong>：玩家拥有更多的与实体之间进行交互的方式，玩家会运用这些系统之间的链接，指定自己的计划。同时游戏具有不确定性，像是AI的预设目标以及不断变化的天气系统，也会让玩家的计划出现意外。这种通过游戏实体与系统之间链接完成的交互，不同于固定的脚本序列，能让玩家有独一无二的体验。</p>
+<p>注意：<strong>如何减少开发者的难度</strong></p>
+<p>使用中间元素，比如在荒野之希中，使用温度来作为中间元素，容纳量燃烧以及冰冻等游戏内容。玩家冰冻敌人实际上是让它的温度降低到了临界点，燃烧则是让温度达到了燃烧的临界点。这样就不要让游戏实体去感知环境中的特定对象或者角色，而只需要感受实体分类之后的输出。其实中间元素的建立，会让系统的裁剪变得更简单。</p>
+<h3 id="神庙设计特点："><a href="#神庙设计特点：" class="headerlink" title="神庙设计特点："></a>神庙设计特点：</h3><ol>
+<li>动态关卡</li>
+</ol>
+<p>神兽内部的关卡（水之大象，炎之蜥蜴，风之鸟，雷骆驼）：利用动态关卡设计，结合神兽的移动导致关卡布局（物理特性发生改变，设计解密）</p>
+<p>神兽处于可以移动，水之神兽的鼻子可以移动到10个不同的角度，风之神兽能够左右倾斜，雷之神兽腹部有三个能够旋转的房间。玩家可以利用神兽的移动去解密。比如可以用大象的鼻子去浇灭火焰。</p>
+<p>这种移动是实时的，并不是发生在过场动画中，在神兽移动的过程中，林克也能在里面跑动，这样就形成了动态关卡。比如（倾斜巨鸟，移动铁球去撞击开关，但同时会导致控制门开关的风扇一起运动，这时候就要结合磁铁的机制，用磁铁吸住风扇，让风扇保持不动。）</p>
+<ol start="2">
+<li>基于玩家权利</li>
+</ol>
+<p>同时给予玩家操作神兽的自由，间接让玩家改变关卡的设置，来达到解密的效果。玩家可以通过菜单控制神兽（比如雷之神兽三个房间能排成一条线制造电力回路，这可以让骆驼的尾巴翘起来，玩家需要切断回路，放低尾巴，然后踩上尾巴，最后连接回路让尾巴连同玩家一起举起来）</p>
+<p>当然，神兽内部的关卡解密也有独立的解密（利用基础的几个机制），比如可以用冰块堵住水流，然后在恰当的时候停下水车。</p>
+<h3 id="大地图的无形引导与限制："><a href="#大地图的无形引导与限制：" class="headerlink" title="大地图的无形引导与限制："></a>大地图的无形引导与限制：</h3><p><strong>灯塔引导</strong>，就是让目标像灯塔一样，成为黑夜中最为瞩目的焦点，从而吸引玩家前进。场景大部分为大面积的色块填充，其中重要的场景元素，在大世界中都显得极其瞩目。同时，需要隐形传达出不同目标的优先级差异，让玩家明确哪一目标有着最为丰富的奖励。</p>
+<p><em><strong>方法1：颜色区隔</strong></em>，使用橙色作为未开启的祠堂与高塔的颜色。因为，其中玩家会觉得橙色的祠堂能给玩家带给最多的奖励，因为看到橙色，玩家会联想到传说，英雄这类关键词联系在一起。</p>
+<p>同理庞大的四神兽，标志性的地形，以及显眼的营地，升起的狼烟，甚至建筑，高山的顶端，这些要素都是为吸引玩家的注意的同时，通过让各式方式在无形之中划分了优先级。当多个要素处于同一阶层时，通过适当限制，然玩家可以通过设计师进行设计编排的路线来进行游戏。</p>
+<p><em><strong>方法2：运用三角遮挡</strong></em>，只需要用远近关系，一个近处的山以及远处的山，就可以让玩家抉择出最优的路线。塞尔达用来大量的三角形，以及各种具有梯度的形状遮挡，比如用土坡，丘陵，山峰等形态，在各个角度对玩家的视线进行遮挡，将玩家在一副单一的画幅中所能够注意到的灯塔控制在一个有限的范围之内。（例子，就是在格鲁德沙漠的高塔眺望，由于视觉遮挡，只能看见一座祠堂。这也正是推进主线流程所需要前往的路线）同时随着游戏的推进，玩家的移动导致可以看到更多的灯塔，这种感觉可以塑造玩家意料之外的惊喜感。</p>
+<p>同时给予玩家下一个目标，使用三角形（山）作为格挡，这样可以塑造更自然的发现的感觉。而方形的遮挡则会让人感到压抑警惕，大部分运用在了迷宫以及祠堂关卡中，</p>
+<p><em><strong>方法3：轨道引导以及成本控制</strong></em></p>
+<p>轨道引导，近似与轨道的路线，将玩家的游玩区域，控制在轨道周边的一定范围之内。成本控制，则是通过调节玩家各项行为所需要的付出成本，引导玩家进行相对低成本的行为。</p>
+<p>游戏通过马匹的“自主意识”，控制玩家的活动范围，当玩家放弃操控任由马匹行进时，马匹会自动吸附在预设好的道路上。如果玩家想要脱离轨道，则需要付出一些时间成本和资源成本，(比如在马匹行进过程中，玩家发现了一处高处的探索点，但马匹行动有限，这时候玩家可以考虑这个高度的地形是否值得花费时间成本或者体力药去爬上去，离开轨道就会被地形的设计以及体力值的限制所需要的成本塞回去，所以玩家往往会回到预先设计好的道路上去）。</p>
+<p>这一切都使用了无形的引导，没有引导线，让玩家觉得是跟随自己的意志去玩设计者设计好的节奏关卡路线。</p>
+<h2 id="横向对比开发世界游戏"><a href="#横向对比开发世界游戏" class="headerlink" title="横向对比开发世界游戏"></a>横向对比开发世界游戏</h2><h3 id="解锁地图扩张空间"><a href="#解锁地图扩张空间" class="headerlink" title="解锁地图扩张空间"></a>解锁地图扩张空间</h3><ol>
+<li><p>迷雾解锁。就是指地图一开始是黑色的位置区域，随着玩家的移动地图的区域一点点变成包含信息的已知区域的一种线性解锁的过程。</p>
+<p>优点：和玩家探索度直接挂钩 缺点：没有阶段性的刺激，很难完美探索</p>
+</li>
+<li><p>区域解锁，就是玩家到达某个解锁点后一口气解锁一片区域的地图信息的形式。</p>
+<p>优点：阶段性刺激，分层投放区域内容，有明确的目标引导。</p>
+<p>缺点：一次性展示的信息量较大，缺乏未知区域的神秘感。</p>
+</li>
+</ol>
+<p>荒野之息和原神都使用的是区域性解锁。荒野之息中，地图开启点（塔）的解锁都会设计挑战和障碍，比如将其设置在敌人营地中间、需要攀登后才可解锁……比起《刺客信条》观光点一样的鸟瞰点，这是大幅度提高探索乐趣的设计。</p>
+<p>原神却没有？其原因是因为地图解锁是长线游玩的基本前置，若设置太高门槛则会导致大量轻量玩家流失。</p>
+<h3 id="大地图探索点"><a href="#大地图探索点" class="headerlink" title="大地图探索点"></a>大地图探索点</h3><h4 id="第一类："><a href="#第一类：" class="headerlink" title="第一类："></a>第一类：</h4><p><strong>对马岛</strong>的引导方式有：</p>
+<ul>
+<li>指引之风：设定目标后风像目标方向吹，带动树叶等粒子效果进行方向提示。</li>
+<li>火光：占领区会有火光和烟雾，在远处可见。</li>
+<li>震动：特殊服装会在附近有宝藏时让手柄震动，同时有萤火虫向目标飞行。</li>
+<li>黄鸟：探索点附近会出现黄鸟，以叫声提醒玩家。玩家靠近后会向目标飞行。</li>
+<li>NPC指引：和NPC沟通得到探索点的信息时会在大地图对其坐标进行标记。</li>
+</ul>
+<p>而<strong>上古卷轴</strong>也会通过叙事（和NPC沟通得到探索点的信息时会在大地图对其坐标进行标记）来指引玩家前往探索点。</p>
+<p>通过视觉和叙事这种游戏内部而非UI的指引，增强了玩家的带入感和探索感。</p>
+<h4 id="第二类"><a href="#第二类" class="headerlink" title="第二类"></a>第二类</h4><p>在<strong>荒野之息</strong>中，并没有传统探索点的设置，而是基于任天堂自己的“引力法则”和三角法则来设计整个开放世界。</p>
+<p>首先，游戏中的武器、材料都为稀缺资源，需要探索来进行补充；游戏中会在地标、营地、废墟等地点设计不同的挑战和收集，并通过视觉的引导来让玩家主动探索。</p>
+<p>将每个兴趣点以视觉引导和目标驱动来做区分，然后以三角法则来做切分：</p>
+<ul>
+<li>大的三角形作为地标来引导玩家。</li>
+<li>中三角形来做地形直接的切割，来隐藏不同的引力点。</li>
+<li>小三角形则是在小区域内调节玩家操作、体验、战斗的节奏，辅助关卡设计。</li>
+</ul>
+<h4 id="第三类"><a href="#第三类" class="headerlink" title="第三类"></a>第三类</h4><p><strong>原神的探索点大致可以分为两类</strong>:</p>
+<p>一类是满足在线长期运营游戏的周期性内容消耗，比如启示之花、藏金之花可以获得经验值和优秀币。无相之某某、纯水精灵这些则是获取角色突破材料的唯一出处。这些内容都是直接在地图上标出的，没有需要探索的要素，且收获奖励需要消耗游戏体力值。他们其实和开放世界探索没有联系，只是服务性游戏在开放世界中的内容投放。但BOSS和大世界的结合丰富了开放世界的生态和BOSS背景。</p>
+<p>除此之外原神的开放世界中确实设置了需要探索才能收集的一些奖励。比如在一些不好到达的位置设置的，用于区域等级成长的神瞳。还有如果有钥匙可以解开获得大量奖励的灵龛。以及其他需要解谜或者战斗才能收集的宝箱。这些兴趣点并非长线运营的一部分，而是实实在在的探索奖励，所以并不会直接在地图上进行提示，而是和荒野之息一样只有玩家去主动探索这些区域才能够发现。</p>
+<h3 id="运营长线游戏难题"><a href="#运营长线游戏难题" class="headerlink" title="运营长线游戏难题"></a>运营长线游戏难题</h3><p>开放世界要求玩家付出时间精力逐渐探索，而长线运营游戏需要玩家利用碎片时间在已知内容中循环。</p>
+<p>针对不同的玩家和玩法需求，整个世界的地图可以被划分成三种区域。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Sandwichzzy/picgo/img/%E5%9B%BE%E7%89%874.png" alt="按照玩法划分区域"></p>
+<ul>
+<li>区域A：少量探索要求，大量已知区域，重复任务区域。比如原神中的日常、周常就可以在这个区域和稍微周边的区域中进行。游戏中的城镇也设置在这块区域。</li>
+<li>区域B：探索玩法区域，需要主动探索发现探索点和奖励，需要克服障碍才能解锁地图。玩家可以在版本中通过付出时间和精力解锁这些区域获得其中的奖励，SOC玩法也可以从这里开始推进。</li>
+<li>区域C：挑战玩法区域，高强度探索压力，无法轻易解锁地图，内容有一定随机性。这块区域对于普通玩家没有探索也可以，满足于重度的有强力探索欲加挑战欲的玩家，通过个性化奖励来回报他们。</li>
+</ul>
+<p>这个区域划分无关系统规则，而是对关卡内容设计和玩法投放的一个指导，最终希望让持有碎片化时间的玩家可以在安全区域进行重复的日常与活动，减少他们游戏时的压力。而当玩家有成片时间时可以进行探索区域和挑战区域更加深度的，不重复的玩法。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Sandwichzzy/picgo/img/%E5%9B%BE%E7%89%875.png" alt="不同区域提供的内容不同"></p>
+<p>具体而言，是希望这个开放世界的安全区域能够成为原神的初始区域一样可以轻松完成日常周常活动的区域。其探索区域可以成为类似荒野之息或者对马岛一样玩家可以去探索自己感兴趣的地点解锁自己感兴趣的内容的区域。危险区域则是像黑魂或者原神雪山区域一样充满挑战和设计，能够被玩家津津乐道但不要求所有玩家都必须完成的区域。</p>
+<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css"></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://sandwichzzy.github.io">Zhenyu Zhou</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://sandwichzzy.github.io/2022/10/23/%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1/%E6%A8%AA%E5%90%91%E5%88%86%E6%9E%90%E5%BC%80%E5%8F%91%E4%B8%96%E7%95%8C%E6%B8%B8%E6%88%8F/">https://sandwichzzy.github.io/2022/10/23/%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1/%E6%A8%AA%E5%90%91%E5%88%86%E6%9E%90%E5%BC%80%E5%8F%91%E4%B8%96%E7%95%8C%E6%B8%B8%E6%88%8F/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://sandwichzzy.github.io" target="_blank">Zhenyu's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://fastly.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg2.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/10/29/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E9%BB%91%E6%9A%97%E4%B9%8B%E9%AD%82%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1%E6%8A%80%E5%B7%A7/"><img class="prev-cover" src="https://cdn.jsdelivr.net/gh/Sandwichzzy/picgo/img/黑魂封面.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info"> 黑暗之魂关卡设计技巧</div></div></a></div><div class="next-post pull-right"><a href="/2022/10/17/%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1/IRON%E7%BA%BF%E6%80%A7%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1/"><img class="next-cover" src="https://cdn.jsdelivr.net/gh/Sandwichzzy/picgo/img/关卡设计IRONII封面图.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">IRON线性关卡设计策划案</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="lv-container" data-id="city" data-uid="MTAyMC81NzM4NC8zMzg0OA=="></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://cdn.jsdelivr.net/gh/Sandwichzzy/picgo/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Zhenyu Zhou</div><div class="author-info__description">个人博客</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">14</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">10</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://www.zzyportfolio.top/"><i class="fas fa-house-chimney"></i><span>作品集</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Sandwichzzy" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:zhenyuzhou1717155@gmail.com" target="_blank" title="邮箱"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://www.zzyportfolio.top/" target="_blank" title="作品集"><i class="fas fa-house-user"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">个人博客，主要写一些关于游戏设计的读书笔记，总结心得，以及游戏策划文档(GDD)。</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%A8%AA%E5%90%91%E5%88%86%E6%9E%90%E5%BC%80%E5%8F%91%E4%B8%96%E7%95%8C%E6%B8%B8%E6%88%8F"><span class="toc-number">1.</span> <span class="toc-text">横向分析开发世界游戏</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8E%9F%E7%A5%9E"><span class="toc-number">1.1.</span> <span class="toc-text">原神</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%80%E5%8F%91%E4%B8%96%E7%95%8C%E7%9A%84%E5%AE%9D%E7%AE%B1%E8%AE%BE%E8%AE%A1%EF%BC%9A"><span class="toc-number">1.1.1.</span> <span class="toc-text">开发世界的宝箱设计：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9D%E7%AE%B1%E5%90%B8%E5%BC%95%E7%8E%A9%E5%AE%B6%E7%9A%84%E5%8E%9F%E5%9B%A0"><span class="toc-number">1.1.1.1.</span> <span class="toc-text">宝箱吸引玩家的原因</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9D%E7%AE%B1%E8%AE%BE%E8%AE%A1%E7%9A%84%E7%9B%AE%E7%9A%84"><span class="toc-number">1.1.1.2.</span> <span class="toc-text">宝箱设计的目的</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9D%E7%AE%B1%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%80%9D%E8%B7%AF"><span class="toc-number">1.1.1.3.</span> <span class="toc-text">宝箱的设计思路</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%91%86%E6%94%BE%E4%BD%8D%E7%BD%AE"><span class="toc-number">1.1.1.4.</span> <span class="toc-text">摆放位置</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C%E7%9A%84%E4%BB%BB%E5%8A%A1%E8%AE%BE%E8%AE%A1-x2F-%E4%BB%BB%E5%8A%A1%E6%8C%87%E5%BC%95"><span class="toc-number">1.1.2.</span> <span class="toc-text">开放世界的任务设计&#x2F;任务指引:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%9F%E7%A5%9E%E5%88%A9%E7%94%A8%E5%85%83%E7%B4%A0%E5%8F%8D%E5%BA%94%E8%BF%9B%E8%A1%8C%E7%9A%84%E6%9C%BA%E5%85%B3%E8%AE%BE%E8%AE%A1%EF%BC%9A"><span class="toc-number">1.1.3.</span> <span class="toc-text">原神利用元素反应进行的机关设计：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%A9%E7%94%A8%E5%85%83%E7%B4%A0%E4%B8%8E%E7%89%A9%E4%BB%B6%E4%BA%A4%E4%BA%92%EF%BC%9A"><span class="toc-number">1.1.3.1.</span> <span class="toc-text">利用元素与物件交互：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%A9%E7%94%A8%E6%9C%BA%E5%85%B3%E5%B8%AE%E5%8A%A9%E5%A4%A7%E4%B8%96%E7%95%8C%E6%8E%A2%E7%B4%A2%EF%BC%9A"><span class="toc-number">1.1.3.2.</span> <span class="toc-text">利用机关帮助大世界探索：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%94%B9%E5%8F%98%E6%9C%BA%E5%85%B3%E7%9A%84%E7%89%A9%E7%90%86%E4%BD%8D%E7%BD%AE%EF%BC%88%E6%97%8B%E8%BD%AC%E8%A7%92%E5%BA%A6%EF%BC%8C%E7%A7%BB%E5%8A%A8%EF%BC%8C%E6%8A%9B%E7%89%A9%E7%BA%BF%EF%BC%8C%E8%BF%9E%E7%BA%BF%E7%AD%89%EF%BC%89%E8%A7%A3%E5%AF%86%EF%BC%9A"><span class="toc-number">1.1.3.3.</span> <span class="toc-text">改变机关的物理位置（旋转角度，移动，抛物线，连线等）解密：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%A9%E7%94%A8%E6%95%B0%E5%AD%A6%E9%80%BB%E8%BE%91%E8%A7%A3%E5%AF%86"><span class="toc-number">1.1.3.4.</span> <span class="toc-text">利用数学逻辑解密</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%AA%E7%89%A9%E8%AE%BE%E8%AE%A1"><span class="toc-number">1.1.4.</span> <span class="toc-text">怪物设计</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%99%AE%E9%80%9A%E6%80%AA"><span class="toc-number">1.1.4.1.</span> <span class="toc-text">普通怪</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%B2%BE%E8%8B%B1%E6%80%AA"><span class="toc-number">1.1.4.2.</span> <span class="toc-text">精英怪</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Boss%E6%80%AA"><span class="toc-number">1.1.4.3.</span> <span class="toc-text">Boss怪</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%91%A8%E5%B8%B8BOSS"><span class="toc-number">1.1.4.4.</span> <span class="toc-text">周常BOSS</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%89%BE%E5%B0%94%E7%99%BB%E6%B3%95%E7%8E%AF"><span class="toc-number">1.2.</span> <span class="toc-text">艾尔登法环</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%80%E5%8F%91%E4%B8%96%E7%95%8C%E7%89%B9%E7%82%B9"><span class="toc-number">1.2.1.</span> <span class="toc-text">开发世界特点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%A7%E5%9C%B0%E5%9B%BE%E5%BC%95%E5%AF%BC%E8%AE%BE%E8%AE%A1"><span class="toc-number">1.2.2.</span> <span class="toc-text">大地图引导设计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1%E7%89%B9%E7%82%B9%EF%BC%9A"><span class="toc-number">1.2.3.</span> <span class="toc-text">关卡设计特点：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8C%BA%E5%9F%9F%E5%88%92%E5%88%86"><span class="toc-number">1.2.3.1.</span> <span class="toc-text">区域划分</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%9E%E6%8E%A5%E6%96%B9%E5%BC%8F"><span class="toc-number">1.2.3.2.</span> <span class="toc-text">连接方式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B3%E5%8D%A1%E8%8A%82%E5%A5%8F%E6%8E%A7%E5%88%B6"><span class="toc-number">1.2.3.3.</span> <span class="toc-text">关卡节奏控制</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%9C%B0%E5%BD%A2"><span class="toc-number">1.2.3.3.1.</span> <span class="toc-text">地形</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%80%AA%E7%89%A9%E5%BC%BA%E5%BA%A6"><span class="toc-number">1.2.3.3.2.</span> <span class="toc-text">怪物强度</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%8D%9F%E8%80%97%E7%B3%BB%E6%95%B0"><span class="toc-number">1.2.3.3.3.</span> <span class="toc-text">损耗系数</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F%E4%B8%B0%E5%AF%8C-gt-%E7%AD%96%E7%95%A5%E5%A4%9A%E6%A0%B7%E5%8C%96"><span class="toc-number">1.2.4.</span> <span class="toc-text">战斗系统丰富-&gt;策略多样化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E5%8F%99%E4%BA%8B"><span class="toc-number">1.2.5.</span> <span class="toc-text">环境叙事</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A1%9E%E5%B0%94%E8%BE%BE%E8%8D%92%E9%87%8E%E4%B9%8B%E6%81%AF"><span class="toc-number">1.3.</span> <span class="toc-text">塞尔达荒野之息</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%80%E5%8F%91%E4%B8%96%E7%95%8C%E7%89%B9%E7%82%B9%EF%BC%9A"><span class="toc-number">1.3.1.</span> <span class="toc-text">开发世界特点：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B6%8C%E7%8E%B0%E5%BC%8F%E4%BA%A4%E4%BA%92"><span class="toc-number">1.3.1.1.</span> <span class="toc-text">涌现式交互</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E6%9E%84%E5%BB%BA%E6%B6%8C%E7%8E%B0%E5%BC%8F%E7%8E%A9%E6%B3%95"><span class="toc-number">1.3.1.2.</span> <span class="toc-text">如何构建涌现式玩法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%BF%E7%94%A8%E6%B6%8C%E7%8E%B0%E5%BC%8F%E8%AE%BE%E8%AE%A1"><span class="toc-number">1.3.1.3.</span> <span class="toc-text">为什么使用涌现式设计</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A5%9E%E5%BA%99%E8%AE%BE%E8%AE%A1%E7%89%B9%E7%82%B9%EF%BC%9A"><span class="toc-number">1.3.2.</span> <span class="toc-text">神庙设计特点：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%A7%E5%9C%B0%E5%9B%BE%E7%9A%84%E6%97%A0%E5%BD%A2%E5%BC%95%E5%AF%BC%E4%B8%8E%E9%99%90%E5%88%B6%EF%BC%9A"><span class="toc-number">1.3.3.</span> <span class="toc-text">大地图的无形引导与限制：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A8%AA%E5%90%91%E5%AF%B9%E6%AF%94%E5%BC%80%E5%8F%91%E4%B8%96%E7%95%8C%E6%B8%B8%E6%88%8F"><span class="toc-number">1.4.</span> <span class="toc-text">横向对比开发世界游戏</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%94%81%E5%9C%B0%E5%9B%BE%E6%89%A9%E5%BC%A0%E7%A9%BA%E9%97%B4"><span class="toc-number">1.4.1.</span> <span class="toc-text">解锁地图扩张空间</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%A7%E5%9C%B0%E5%9B%BE%E6%8E%A2%E7%B4%A2%E7%82%B9"><span class="toc-number">1.4.2.</span> <span class="toc-text">大地图探索点</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%B1%BB%EF%BC%9A"><span class="toc-number">1.4.2.1.</span> <span class="toc-text">第一类：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%B1%BB"><span class="toc-number">1.4.2.2.</span> <span class="toc-text">第二类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%B1%BB"><span class="toc-number">1.4.2.3.</span> <span class="toc-text">第三类</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E8%90%A5%E9%95%BF%E7%BA%BF%E6%B8%B8%E6%88%8F%E9%9A%BE%E9%A2%98"><span class="toc-number">1.4.3.</span> <span class="toc-text">运营长线游戏难题</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/10/29/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E5%B0%84%E5%87%BB%E7%B1%BB%E6%B8%B8%E6%88%8F%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1%E6%80%9D%E8%B7%AF/" title="TPS游戏关卡设计思路"><img src="https://cdn.jsdelivr.net/gh/Sandwichzzy/picgo/img/封面.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="TPS游戏关卡设计思路"/></a><div class="content"><a class="title" href="/2022/10/29/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E5%B0%84%E5%87%BB%E7%B1%BB%E6%B8%B8%E6%88%8F%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1%E6%80%9D%E8%B7%AF/" title="TPS游戏关卡设计思路">TPS游戏关卡设计思路</a><time datetime="2022-10-29T00:00:00.000Z" title="发表于 2022-10-29 08:00:00">2022-10-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/29/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E9%BB%91%E6%9A%97%E4%B9%8B%E9%AD%82%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1%E6%8A%80%E5%B7%A7/" title=" 黑暗之魂关卡设计技巧"><img src="https://cdn.jsdelivr.net/gh/Sandwichzzy/picgo/img/黑魂封面.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt=" 黑暗之魂关卡设计技巧"/></a><div class="content"><a class="title" href="/2022/10/29/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E9%BB%91%E6%9A%97%E4%B9%8B%E9%AD%82%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1%E6%8A%80%E5%B7%A7/" title=" 黑暗之魂关卡设计技巧"> 黑暗之魂关卡设计技巧</a><time datetime="2022-10-29T00:00:00.000Z" title="发表于 2022-10-29 08:00:00">2022-10-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/23/%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1/%E6%A8%AA%E5%90%91%E5%88%86%E6%9E%90%E5%BC%80%E5%8F%91%E4%B8%96%E7%95%8C%E6%B8%B8%E6%88%8F/" title="无题"><img src="https://fastly.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg2.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="content"><a class="title" href="/2022/10/23/%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1/%E6%A8%AA%E5%90%91%E5%88%86%E6%9E%90%E5%BC%80%E5%8F%91%E4%B8%96%E7%95%8C%E6%B8%B8%E6%88%8F/" title="无题">无题</a><time datetime="2022-10-22T20:24:24.386Z" title="发表于 2022-10-23 04:24:24">2022-10-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/17/%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1/IRON%E7%BA%BF%E6%80%A7%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1/" title="IRON线性关卡设计策划案"><img src="https://cdn.jsdelivr.net/gh/Sandwichzzy/picgo/img/关卡设计IRONII封面图.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="IRON线性关卡设计策划案"/></a><div class="content"><a class="title" href="/2022/10/17/%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1/IRON%E7%BA%BF%E6%80%A7%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1/" title="IRON线性关卡设计策划案">IRON线性关卡设计策划案</a><time datetime="2022-10-17T00:00:00.000Z" title="发表于 2022-10-17 08:00:00">2022-10-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/11/%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1%E6%A6%82%E5%BF%B5/%E5%A6%82%E4%BD%95%E6%8F%90%E5%8D%87%E5%8A%A8%E4%BD%9C%E6%B8%B8%E6%88%8F%E7%9A%84%E6%88%98%E6%96%97%E4%BD%93%E9%AA%8C%E6%A0%B8%E5%BF%83%E2%80%9C%E6%89%93%E5%87%BB%E6%84%9F%E2%80%9D/" title="如何提升动作游戏的战斗体验核心“打击感”"><img src="https://cdn.jsdelivr.net/gh/Sandwichzzy/picgo/img/打击感.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="如何提升动作游戏的战斗体验核心“打击感”"/></a><div class="content"><a class="title" href="/2022/10/11/%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1%E6%A6%82%E5%BF%B5/%E5%A6%82%E4%BD%95%E6%8F%90%E5%8D%87%E5%8A%A8%E4%BD%9C%E6%B8%B8%E6%88%8F%E7%9A%84%E6%88%98%E6%96%97%E4%BD%93%E9%AA%8C%E6%A0%B8%E5%BF%83%E2%80%9C%E6%89%93%E5%87%BB%E6%84%9F%E2%80%9D/" title="如何提升动作游戏的战斗体验核心“打击感”">如何提升动作游戏的战斗体验核心“打击感”</a><time datetime="2022-10-11T00:00:00.000Z" title="发表于 2022-10-11 08:00:00">2022-10-11</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 By Zhenyu Zhou</div><div class="footer_custom_text">个人博客，游戏设计学习总结</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (true){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function loadLivere () {
+  if (typeof LivereTower === 'object') {
+    window.LivereTower.init()
+  }
+  else {
+    (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+  }
+}
+
+if ('Livere' === 'Livere' || !false) {
+  if (false) btf.loadComment(document.getElementById('lv-container'), loadLivere)
+  else loadLivere()
+}
+else {
+  function loadOtherComment () {
+    loadLivere()
+  }
+}</script></div><div class="aplayer no-destroy" data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.6" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["meta[property=\"og:image\"]","meta[property=\"og:title\"]","meta[property=\"og:url\"]","head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/z16.model.json"},"display":{"position":"right","width":180,"height":300,"hOffset":50,"vOffset":-15},"mobile":{"show":true},"react":{"opacity":0.7,"opacityOnHover":0.9},"log":false});</script></body></html>
